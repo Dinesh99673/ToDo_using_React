@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 as uuid } from 'uuid'
-import { useState } from "react";
+import { useState} from "react";
 import ToDoItem from "./ToDoItem";
 
 
@@ -59,14 +59,14 @@ function TodoBody(){
             flag:false
         }
         setTodo("")
-        return [...prevNote, temp]
+        return [temp,...prevNote]
       });
       console.log(todos)
     }
     
     return(
         <div className='items-center flex flex-col h-[80%]'>
-          <div className='w-[60%] h-[90%] bg-yellow-300 rounded-lg shadow-2xl border-collapse p-3 mt-[50px]'>
+          <div className='w-[60%] h-[90%] bg-yellow-300 rounded-lg shadow-2xl border-collapse p-3 mt-[50px] overflow-auto'>
             <div className='flex flex-wrap gap-2 p-3'>
               <div className='flex flex-wrap gap-2 w-full'>
                 <input type="text" 
