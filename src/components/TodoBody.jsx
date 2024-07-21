@@ -65,8 +65,8 @@ function TodoBody(){
     }
     
     return(
-        <div className='items-center flex flex-col h-[80%]'>
-          <div className='w-[60%] h-[90%] bg-yellow-300 rounded-lg shadow-2xl border-collapse p-3 mt-[50px] overflow-auto'>
+        <div className='items-center flex flex-col h-screen'>
+          <div className='w-[60%] min-h-[75%] bg-yellow-300 rounded-lg shadow-2xl border-collapse p-3 mt-[50px]'>
             <div className='flex flex-wrap gap-2 p-3'>
               <div className='flex flex-wrap gap-2 w-full'>
                 <input type="text" 
