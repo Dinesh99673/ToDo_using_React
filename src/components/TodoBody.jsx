@@ -79,7 +79,7 @@ function TodoBody(){
                 </div>
                 <div className="flex justify-between w-full mt-3">
                   <p className='font-bold font-serif'>Your <span className='text-bold text-orange-500'>ToDos</span></p>
-                  <h2 className="text-lg font-bold text-orange-500 font-serif ">{date.getDate()}-{date.getMonth()}-{date.getFullYear()}</h2>
+                  <h2 className="text-lg font-bold text-orange-500 font-serif ">{date.getDate()}-{date.getMonth()+1}-{date.getFullYear()}</h2>
                 </div>
             </div>
             <hr className='bg-yellow-400 h-1 rounded-lg mt-[-10px] shadow-2xl' />
